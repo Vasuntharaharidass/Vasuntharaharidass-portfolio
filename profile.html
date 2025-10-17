@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasuntharadevi | Portfolio</title>
+  <link rel="stylesheet" href="sstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education & Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <img src="profilepic.jpg.png" alt="Vasuntharadevi Photo" class="profile-pic">
+    <h1>About Me..,</h1>
+      <div class="about-text">
+        <p>
+          I'm a passionate tech enthusiast and a recent graduate from <b>K. Ramakrishnan College of Technology</b>, where I focused on <b>Artificial Intelligence and Machine Learning</b>. I love experimenting with backend development, designing efficient data structures, building APIs, and creating systems that are clean, maintainable, and scalable.
+        </p>
+        <p>
+          Driven by curiosity, I enjoy learning new technologies, working on personal projects, and applying my knowledge to real-world challenges. Beyond coding, I explore AI tools, dive into emerging technologies like blockchain, and build projects that help me grow my skills and stay updated with the tech world.
+        </p>
+      
+    <a href="vasunthara Devi H $.pdf" class="btn" target="_blank">Go to Resume</a>
+  </section>
+
+  <!-- Education & Skills -->
+  <section id="education" class="section">
+    <h1>Education & Skills</h1>
+    <div class="education-container">
+      <div class="edu-card">
+        <p><b>Institute:</b> K. Ramakrishnan College of Technology</p>
+        <p><b>Degree & Branch:</b> B.Tech – Artificial Intelligence and Machine Learning</p>
+        <p><b>CGPA:</b> 8.6</p>
+        <p><b>Year of Passing:</b> 2025</p>
+      </div>
+      <div class="edu-card">
+        <p><b>School:</b> Vidhya Parthi Higher Secondary School</p>
+        <p><b>Qualification:</b> HSC</p>
+        <p><b>Percentage:</b> 83%</p>
+        <p><b>Year of Passing:</b> 2021</p>
+      </div>
+      <div class="edu-card">
+        <p><b>School:</b> Vidhya Parthi Higher Secondary School</p>
+        <p><b>Qualification:</b> SSLC</p>
+        <p><b>Percentage:</b> 87%</p>
+        <p><b>Year of Passing:</b> 2019</p>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <span class="skill">Java</span>
+        <span class="skill">HTML</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">SQL</span>
+        <span class="skill">.NET Full Stack</span>
+        <span class="skill">Pre-Processing</span>
+        <span class="skill">Data Handling</span>
+        <span class="skill">Excel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h1>Projects</h1>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>E-Voting System using CNN</h3>
+        <p>Developed a secure and efficient electronic voting system that enables voters to cast votes digitally while ensuring data integrity and privacy. Focused on backend architecture, user authentication, and real-time vote tallying to deliver a seamless voting experience.</p>
+        <a href="https://github.com/Vasuntharaharidass/E-Voting-" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Customer lifetime Value Prediction</h3>
+        <p>Designed a Customer Lifetime Value (CLV) prediction tool to help businesses understand and forecast customer behavior. Utilized data analysis and machine learning algorithms to provide actionable insights for marketing strategies and customer retention.</p>
+        <a href="https://github.com/Vasuntharaharidass/Clv" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Hate Speech Detection</h3>
+        <p>Built a machine learning model to detect hate speech in text data using natural language processing (NLP). Implemented preprocessing, feature extraction, and classification techniques to accurately identify harmful or offensive content, contributing to safer online environments.</p>
+        <a href="https://github.com/Vasuntharaharidass/Hatespeech" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>UI/UX Design Prototype</h3>
+        <p>Created an intuitive and professional UI/UX prototype for LMNA’s company assessment project. Focused on user-centered design principles, wireframes, and interactive mockups using Figma to enhance usability and overall user experience.</p>
+        <a href="https://www.figma.com/proto/94xZnJUXklG2WMj31cP04u/LMNA?t=fj6VjJuUjSfPXefF-1&node-id=2-2" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <h1>Contact Me</h1>
+    <p>Connect with me professionally through my profiles below.</p>
+    <div class="contact-icons">
+      <a href="mailto:vasuntharadevi681@example.com" class="icon">📧</a>
+      <a href="https://www.linkedin.com/in/vasuntharadeviharidass/" target="_blank" class="icon">💼</a>
+      <a href="https://github.com/Vasuntharaharidass" target="_blank" class="icon">💻</a>
+      <a href="tel:+918220067182" class="icon">📞</a>
+    </div>
+    <p class="info">vasuntharadevi681@example.com | +91 82200 67182</p>
+  </section>
+
+  <script>
+    // Slide-in animation
+    const sections=document.querySelectorAll(".section");
+    const obs=new IntersectionObserver(e=>{
+      e.forEach(i=>{if(i.isIntersecting)i.target.classList.add("show");});
+    },{threshold:0.2});
+    sections.forEach(s=>obs.observe(s));
+
+    // Icon click effect
+    document.querySelectorAll(".icon").forEach(icon=>{
+      icon.addEventListener("click",()=>icon.classList.toggle("active"));
+    });
+  </script>
+</body>
+</html>
